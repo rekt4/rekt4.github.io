@@ -1,0 +1,63 @@
+body {
+	font-family: "Lucida Console", Courier, monospace;
+}
+
+h1 {
+	text-align: center;
+}
+
+.links {
+	text-align: center;
+}
+
+.intro {
+	font-size: 20px;
+	color: red;
+}
+
+@keyframes backgroundChange {
+	from {
+		background: white;
+	}
+
+	25% {
+		background: pink;
+	}
+
+	50% {
+		background: orange;
+	}
+
+	75% {
+		background: green;
+	}
+
+	to {
+		background: gray;
+	}
+}
+
+body {
+	animation-name: backgroundChange;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes leftRight {
+	from {
+		margin-left: 0%;
+	}
+
+	to {
+		margin-left:80%;
+	}
+}
+
+.image {
+	animation-name: leftRight;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	width: 20%;
+}
